@@ -199,3 +199,9 @@
 
     /*END OF BUTTONS*/
 }
+
+@layer utilities {
+    .search-wrapper:where(input[type="search"]:focus-within) {
+        @apply bg-red-500;
+    }
+}
