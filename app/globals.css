@@ -75,6 +75,9 @@
     --color-background-elevated-2: var(--background-elevated-2);
     --color-background-elevated-3: var(--background-elevated-3);
     --color-background-elevated-4: var(--background-elevated-4);
+
+    --spacing-safe-bottom: calc(1em + env(safe-area-inset-bottom, 2rem));
+    --spacing-safe-top: calc(1em + env(safe-area-inset-top, 2rem));
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -121,11 +124,11 @@
 
         max-width: 81.25rem; /* 1300px */
 
-        @apply mx-auto grid w-full auto-rows-auto grid-cols-(--mobile-columns) gap-x-2 gap-y-12 md:grid-cols-(--desktop-columns) md:gap-x-4 md:gap-y-24;
+        @apply mx-auto grid w-full auto-rows-auto grid-cols-(--mobile-columns) auto-rows-auto gap-x-2 gap-y-12 md:grid-cols-(--desktop-columns) md:gap-x-4 md:gap-y-24;
     }
 
     .section {
-        @apply px-4 py-20 md:px-8 md:py-24;
+        @apply px-4 my-20 md:px-0 md:my-24;
     }
 
     /*BUTTON UTILITIES*/
@@ -133,7 +136,7 @@
     .btn {
         @apply inline-flex items-center justify-center gap-2
                font-medium rounded-full transition-all select-none
-               px-4 py-2 text-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+               px-4 py-4 text-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
     }
 
     /* Sizes */
@@ -142,7 +145,7 @@
     }
 
     .btn-lg {
-        @apply px-6 py-3 text-base;
+        @apply px-6 py-4 text-base;
     }
 
     /* --- VARIANTS --- */
