@@ -121,7 +121,7 @@
 
         max-width: 81.25rem; /* 1300px */
 
-        @apply mx-auto grid w-full auto-rows-auto grid-cols-(--mobile-columns) gap-x-2 gap-y-16 md:grid-cols-(--desktop-columns) md:gap-x-4 md:gap-y-24;
+        @apply mx-auto grid w-full auto-rows-auto grid-cols-(--mobile-columns) gap-x-2 gap-y-12 md:grid-cols-(--desktop-columns) md:gap-x-4 md:gap-y-24;
     }
 
     .section {

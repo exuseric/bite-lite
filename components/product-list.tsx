@@ -16,7 +16,7 @@ export default function ProductList() {
               {category.items.map((item) => (
                 <li key={item.id}>
                   <Link
-                    href={`/product/${item.slug}`}
+                    href={`/products/${item.slug}`}
                     aria-labelledby={`item-${item.name}`}
                     className="flex flex-col gap-y-2 w-full hover:bg-background-elevated-1 md:px-3 py-4 rounded-md"
                   >
