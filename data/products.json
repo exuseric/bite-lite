@@ -1,882 +1,884 @@
-[
-  {
-    "id": "item-101",
-    "name": "The Classic Lite Burger",
-    "description": "A juicy beef patty, cheddar, lettuce, and our signature Lite sauce on a brioche bun.",
-    "price": 12.99,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=11"
-  },
-  {
-    "id": "item-102",
-    "name": "Smoky BBQ Burger",
-    "description": "Topped with crispy onion rings, smoky BBQ glaze, and Swiss cheese.",
-    "price": 14.5,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=12"
-  },
-  {
-    "id": "item-103",
-    "name": "Mushroom & Swiss Burger",
-    "description": "Sautéed exotic mushrooms and melted Swiss cheese.",
-    "price": 13.99,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=13"
-  },
-  {
-    "id": "item-104",
-    "name": "Spicy Jalapeño Burger",
-    "description": "For those who like heat: pickled jalapeños, pepper jack cheese, and spicy mayo.",
-    "price": 13.5,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=14"
-  },
-  {
-    "id": "item-105",
-    "name": "Turkey Avocado Burger",
-    "description": "Lean ground turkey patty topped with fresh avocado and lime aioli.",
-    "price": 15.25,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=15"
-  },
-  {
-    "id": "item-106",
-    "name": "Vegetarian Black Bean Burger",
-    "description": "A flavorful black bean patty with corn salsa and chipotle sauce.",
-    "price": 11.99,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=16"
-  },
-  {
-    "id": "item-107",
-    "name": "Double Cheese Beast",
-    "description": "Two beef patties, four slices of cheese, and bacon. Go big or go home.",
-    "price": 17.99,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=17"
-  },
-  {
-    "id": "item-108",
-    "name": "The Californian Burger",
-    "description": "Topped with sprouts, tomato, onion, and a fresh basil pesto.",
-    "price": 14.75,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=18"
-  },
-  {
-    "id": "item-109",
-    "name": "Breakfast Burger",
-    "description": "Beef patty, fried egg, hash brown, and hollandaise sauce.",
-    "price": 14.99,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=19"
-  },
-  {
-    "id": "item-110",
-    "name": "Bacon Jam Burger",
-    "description": "Sweet and savory bacon jam with creamy goat cheese.",
-    "price": 15.5,
-    "categoryId": "cat-1",
-    "image": "https://picsum.photos/300/200?random=20"
-  },
-  {
-    "id": "item-201",
-    "name": "Margherita Pizza",
-    "description": "San Marzano tomatoes, fresh mozzarella, and basil.",
-    "price": 16.0,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=21"
-  },
-  {
-    "id": "item-202",
-    "name": "Pepperoni Feast Pizza",
-    "description": "Loads of spicy pepperoni and three types of Italian cheese.",
-    "price": 18.0,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=22"
-  },
-  {
-    "id": "item-203",
-    "name": "Truffle Mushroom Pizza",
-    "description": "White truffle oil, wild mushrooms, and Gorgonzola cheese.",
-    "price": 21.5,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=23"
-  },
-  {
-    "id": "item-204",
-    "name": "Hawaiian Luau Pizza",
-    "description": "Pineapple, smoked ham, and a sweet red sauce.",
-    "price": 17.5,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=24"
-  },
-  {
-    "id": "item-205",
-    "name": "Meat Lover's Delight",
-    "description": "Sausage, bacon, pepperoni, and ground beef.",
-    "price": 20.0,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=25"
-  },
-  {
-    "id": "item-206",
-    "name": "Pesto Veggie Pizza",
-    "description": "House-made pesto base, cherry tomatoes, and bell peppers.",
-    "price": 16.99,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=26"
-  },
-  {
-    "id": "item-207",
-    "name": "Spicy Chicken Ranch",
-    "description": "Grilled chicken, ranch dressing swirl, and buffalo hot sauce.",
-    "price": 18.5,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=27"
-  },
-  {
-    "id": "item-208",
-    "name": "Four Cheese Blend",
-    "description": "A classic blend of mozzarella, provolone, parmesan, and ricotta.",
-    "price": 15.5,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=28"
-  },
-  {
-    "id": "item-209",
-    "name": "Mediterranean Pizza",
-    "description": "Feta cheese, olives, sun-dried tomatoes, and oregano.",
-    "price": 17.75,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=29"
-  },
-  {
-    "id": "item-210",
-    "name": "The White Garlic Pizza",
-    "description": "No tomato sauce. Just garlic butter, mozzarella, and herbs.",
-    "price": 16.25,
-    "categoryId": "cat-2",
-    "image": "https://picsum.photos/300/200?random=30"
-  },
-  {
-    "id": "item-301",
-    "name": "Carne Asada Tacos",
-    "description": "Grilled marinated steak, onions, cilantro, and salsa verde.",
-    "price": 4.5,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=31"
-  },
-  {
-    "id": "item-302",
-    "name": "Spicy Chicken Burrito",
-    "description": "Rice, beans, chicken, cheese, and a fiery habanero sauce wrapped in a large tortilla.",
-    "price": 11.0,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=32"
-  },
-  {
-    "id": "item-303",
-    "name": "Al Pastor Tacos",
-    "description": "Pork marinated in chiles and spices, served with pineapple.",
-    "price": 4.75,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=33"
-  },
-  {
-    "id": "item-304",
-    "name": "Fish Tacos (Baja Style)",
-    "description": "Crispy fried cod, cabbage slaw, and creamy lime dressing.",
-    "price": 5.0,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=34"
-  },
-  {
-    "id": "item-305",
-    "name": "Vegetarian Fajita Burrito",
-    "description": "Sautéed bell peppers, onions, rice, and fresh guacamole.",
-    "price": 10.5,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=35"
-  },
-  {
-    "id": "item-306",
-    "name": "Shrimp Tacos",
-    "description": "Grilled shrimp with a chipotle-lime marinade.",
-    "price": 5.5,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=36"
-  },
-  {
-    "id": "item-307",
-    "name": "Beef Barbacoa Burrito Bowl",
-    "description": "Slow-cooked shredded beef served over rice and beans (no tortilla).",
-    "price": 12.0,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=37"
-  },
-  {
-    "id": "item-308",
-    "name": "Taco Platter (Mix & Match)",
-    "description": "A selection of three different tacos (Chicken, Beef, Veggie).",
-    "price": 13.0,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=38"
-  },
-  {
-    "id": "item-309",
-    "name": "Quesabirria Tacos",
-    "description": "Cheese-filled tacos dipped in broth and fried, served with consommé.",
-    "price": 5.25,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=39"
-  },
-  {
-    "id": "item-310",
-    "name": "Massive Nachos Grande",
-    "description": "Tortilla chips loaded with queso, beans, sour cream, and choice of meat.",
-    "price": 14.5,
-    "categoryId": "cat-3",
-    "image": "https://picsum.photos/300/200?random=40"
-  },
-  {
-    "id": "item-401",
-    "name": "Classic Caesar Salad",
-    "description": "Romaine, croutons, parmesan, and Caesar dressing.",
-    "price": 9.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=41"
-  },
-  {
-    "id": "item-402",
-    "name": "Ahi Tuna Poke Bowl",
-    "description": "Diced raw tuna, sticky rice, avocado, and soy-ginger dressing.",
-    "price": 17.0,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=42"
-  },
-  {
-    "id": "item-403",
-    "name": "Grilled Chicken Cobb Salad",
-    "description": "Chicken, bacon, egg, avocado, blue cheese, and red wine vinaigrette.",
-    "price": 14.99,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=43"
-  },
-  {
-    "id": "item-404",
-    "name": "Southwest Quinoa Salad",
-    "description": "Quinoa, black beans, corn, bell peppers, and chipotle-lime dressing.",
-    "price": 12.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=44"
-  },
-  {
-    "id": "item-405",
-    "name": "Greek Village Salad",
-    "description": "Tomatoes, cucumbers, olives, red onion, and feta with a lemon dressing.",
-    "price": 11.99,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=45"
-  },
-  {
-    "id": "item-406",
-    "name": "Steak Salad with Blue Cheese",
-    "description": "Grilled sliced sirloin steak over mixed greens with candied pecans.",
-    "price": 18.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=46"
-  },
-  {
-    "id": "item-407",
-    "name": "Caprese Salad",
-    "description": "Fresh mozzarella, ripe tomatoes, basil, and a balsamic glaze.",
-    "price": 10.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=47"
-  },
-  {
-    "id": "item-408",
-    "name": "Harvest Apple Salad",
-    "description": "Mixed greens, sliced apples, walnuts, and a cider vinaigrette.",
-    "price": 13.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=48"
-  },
-  {
-    "id": "item-409",
-    "name": "Shrimp & Citrus Salad",
-    "description": "Grilled shrimp, orange segments, avocado, and lime dressing.",
-    "price": 16.5,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=49"
-  },
-  {
-    "id": "item-410",
-    "name": "Asian Sesame Chicken Salad",
-    "description": "Shredded chicken, mandarins, crunchy noodles, and sesame dressing.",
-    "price": 15.25,
-    "categoryId": "cat-4",
-    "image": "https://picsum.photos/300/200?random=50"
-  },
-  {
-    "id": "item-501",
-    "name": "Spicy Dan Dan Noodles",
-    "description": "Wok-tossed noodles in a rich, savory, and spicy peanut sauce.",
-    "price": 13.99,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=51"
-  },
-  {
-    "id": "item-502",
-    "name": "Pad Thai",
-    "description": "Classic Thai rice noodles, tamarind sauce, peanuts, and tofu or shrimp.",
-    "price": 14.5,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=52"
-  },
-  {
-    "id": "item-503",
-    "name": "Japanese Ramen Bowl",
-    "description": "Slow-simmered pork bone broth with chashu pork, egg, and nori.",
-    "price": 16.0,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=53"
-  },
-  {
-    "id": "item-504",
-    "name": "Vietnamese Pho",
-    "description": "Aromatic beef broth with rice noodles, tender beef slices, and fresh herbs.",
-    "price": 15.5,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=54"
-  },
-  {
-    "id": "item-505",
-    "name": "Lo Mein (Veggie)",
-    "description": "Thick egg noodles tossed with mixed vegetables and a light soy sauce.",
-    "price": 12.99,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=55"
-  },
-  {
-    "id": "item-506",
-    "name": "Soba Noodle Salad",
-    "description": "Chilled soba noodles with edamame, shredded carrot, and citrus dressing.",
-    "price": 13.5,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=56"
-  },
-  {
-    "id": "item-507",
-    "name": "Singapore Street Noodles",
-    "description": "Curry-seasoned rice vermicelli with shrimp, char siu pork, and bean sprouts.",
-    "price": 15.25,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=57"
-  },
-  {
-    "id": "item-508",
-    "name": "Udon Noodle Soup",
-    "description": "Thick wheat flour noodles in a dashi broth with tempura flakes and scallions.",
-    "price": 14.0,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=58"
-  },
-  {
-    "id": "item-509",
-    "name": "Garlic Butter Noodles",
-    "description": "Simple, rich noodles tossed in melted garlic butter and parmesan.",
-    "price": 11.99,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=59"
-  },
-  {
-    "id": "item-510",
-    "name": "Chili Oil Wontons",
-    "description": "Pork and shrimp wontons drenched in aromatic chili oil sauce.",
-    "price": 10.99,
-    "categoryId": "cat-5",
-    "image": "https://picsum.photos/300/200?random=60"
-  },
-  {
-    "id": "item-601",
-    "name": "Molten Lava Chocolate Cake",
-    "description": "Warm chocolate cake with a gooey, molten center, served with vanilla ice cream.",
-    "price": 7.5,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=61"
-  },
-  {
-    "id": "item-602",
-    "name": "New York Cheesecake",
-    "description": "Classic creamy cheesecake on a graham cracker crust, topped with berry compote.",
-    "price": 6.99,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=62"
-  },
-  {
-    "id": "item-603",
-    "name": "Salted Caramel Brownie",
-    "description": "Fudgy brownie squares drizzled with rich salted caramel sauce.",
-    "price": 5.5,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=63"
-  },
-  {
-    "id": "item-604",
-    "name": "Key Lime Pie",
-    "description": "Tart and sweet lime filling in a buttery crust, finished with whipped cream.",
-    "price": 6.25,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=64"
-  },
-  {
-    "id": "item-605",
-    "name": "Tiramisu Cups",
-    "description": "Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa.",
-    "price": 7.0,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=65"
-  },
-  {
-    "id": "item-606",
-    "name": "Apple Crumble",
-    "description": "Warm, spiced baked apples topped with a crunchy oat crumble.",
-    "price": 5.99,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=66"
-  },
-  {
-    "id": "item-607",
-    "name": "Chocolate Chip Cookie Dough Skillet",
-    "description": "A warm skillet of fresh cookie dough, ready for two (or one).",
-    "price": 8.0,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=67"
-  },
-  {
-    "id": "item-608",
-    "name": "Lemon Ricotta Cake",
-    "description": "A light and airy cake infused with fresh lemon and creamy ricotta.",
-    "price": 6.75,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=68"
-  },
-  {
-    "id": "item-609",
-    "name": "Mango Sticky Rice",
-    "description": "Sweet sticky rice cooked in coconut milk, served with fresh mango slices.",
-    "price": 7.25,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=69"
-  },
-  {
-    "id": "item-610",
-    "name": "Assorted Mini Macarons (6pc)",
-    "description": "A selection of six colorful, flavored almond meringue cookies.",
-    "price": 9.5,
-    "categoryId": "cat-6",
-    "image": "https://picsum.photos/300/200?random=70"
-  },
-  {
-    "id": "item-701",
-    "name": "Grilled Salmon Fillet",
-    "description": "Lightly seasoned grilled salmon, served with roasted asparagus.",
-    "price": 22.0,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=71"
-  },
-  {
-    "id": "item-702",
-    "name": "Lemon Garlic Shrimp Scampi",
-    "description": "Shrimp sautéed in a lemon-garlic butter sauce over linguine.",
-    "price": 19.5,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=72"
-  },
-  {
-    "id": "item-703",
-    "name": "Fish and Chips (Cod)",
-    "description": "Crispy beer-battered cod and thick-cut fries, served with tartar sauce.",
-    "price": 16.0,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=73"
-  },
-  {
-    "id": "item-704",
-    "name": "Spicy Tuna Poke Bowl",
-    "description": "Raw tuna marinated in a spicy sesame sauce, over seasoned rice.",
-    "price": 17.5,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=74"
-  },
-  {
-    "id": "item-705",
-    "name": "Mussel Linguine",
-    "description": "Fresh mussels cooked in white wine, chili, and tomato sauce.",
-    "price": 18.99,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=75"
-  },
-  {
-    "id": "item-706",
-    "name": "Crab Cakes (2pc)",
-    "description": "Two house-made lump crab cakes with a spicy remoulade.",
-    "price": 21.0,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=76"
-  },
-  {
-    "id": "item-707",
-    "name": "Fried Calamari",
-    "description": "Crispy fried squid rings served with marinara sauce.",
-    "price": 12.5,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=77"
-  },
-  {
-    "id": "item-708",
-    "name": "Seared Scallops with Risotto",
-    "description": "Pan-seared sea scallops served over creamy saffron risotto.",
-    "price": 24.0,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=78"
-  },
-  {
-    "id": "item-709",
-    "name": "Tuna Melt Sandwich",
-    "description": "Classic tuna salad with melted cheddar on toasted sourdough.",
-    "price": 11.5,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=79"
-  },
-  {
-    "id": "item-710",
-    "name": "Oysters on the Half Shell (6pc)",
-    "description": "Half-dozen fresh oysters served with mignonette and cocktail sauce.",
-    "price": 19.99,
-    "categoryId": "cat-7",
-    "image": "https://picsum.photos/300/200?random=80"
-  },
-  {
-    "id": "item-801",
-    "name": "Avocado Toast with Egg",
-    "description": "Toasted sourdough, smashed avocado, everything bagel seasoning, and a fried egg.",
-    "price": 9.99,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=81"
-  },
-  {
-    "id": "item-802",
-    "name": "Fluffy Buttermilk Pancakes (Stack of 3)",
-    "description": "Served with butter and maple syrup.",
-    "price": 8.0,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=82"
-  },
-  {
-    "id": "item-803",
-    "name": "Breakfast Burrito Grande",
-    "description": "Scrambled eggs, sausage, potatoes, and cheese wrapped in a tortilla.",
-    "price": 11.5,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=83"
-  },
-  {
-    "id": "item-804",
-    "name": "French Toast with Berries",
-    "description": "Thick-cut bread dipped in cinnamon egg batter and topped with seasonal berries.",
-    "price": 10.5,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=84"
-  },
-  {
-    "id": "item-805",
-    "name": "Smoked Salmon Bagel",
-    "description": "Toasted bagel with cream cheese, smoked salmon, capers, and red onion.",
-    "price": 13.0,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=85"
-  },
-  {
-    "id": "item-806",
-    "name": "Veggie Omelette",
-    "description": "Three-egg omelette filled with spinach, mushrooms, tomatoes, and feta.",
-    "price": 12.0,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=86"
-  },
-  {
-    "id": "item-807",
-    "name": "Waffles and Fried Chicken",
-    "description": "A southern classic: crispy fried chicken with sweet waffles and hot honey.",
-    "price": 15.99,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=87"
-  },
-  {
-    "id": "item-808",
-    "name": "Granola & Yogurt Parfait",
-    "description": "Layers of Greek yogurt, crunchy granola, and fresh fruit.",
-    "price": 7.5,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=88"
-  },
-  {
-    "id": "item-809",
-    "name": "Sausage and Eggs Platter",
-    "description": "Two eggs (any style), two sausage patties, and hash browns.",
-    "price": 11.99,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=89"
-  },
-  {
-    "id": "item-810",
-    "name": "Huevos Rancheros",
-    "description": "Fried eggs served upon corn tortillas, topped with salsa and avocado.",
-    "price": 12.5,
-    "categoryId": "cat-8",
-    "image": "https://picsum.photos/300/200?random=90"
-  },
-  {
-    "id": "item-901",
-    "name": "House-Made Lemonade",
-    "description": "Freshly squeezed lemons, lightly sweetened.",
-    "price": 3.5,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=91"
-  },
-  {
-    "id": "item-902",
-    "name": "Iced Coffee (Cold Brew)",
-    "description": "Smooth, strong cold brew coffee, served over ice.",
-    "price": 4.0,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=92"
-  },
-  {
-    "id": "item-903",
-    "name": "Mango Smoothie",
-    "description": "A blend of fresh mango, yogurt, and a touch of honey.",
-    "price": 5.5,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=93"
-  },
-  {
-    "id": "item-904",
-    "name": "Sparkling Water",
-    "description": "Bubbly and refreshing, with a twist of lime.",
-    "price": 2.5,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=94"
-  },
-  {
-    "id": "item-905",
-    "name": "Matcha Latte (Iced or Hot)",
-    "description": "Ceremonial grade matcha with your choice of milk.",
-    "price": 5.0,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=95"
-  },
-  {
-    "id": "item-906",
-    "name": "Green Detox Juice",
-    "description": "Spinach, kale, apple, and cucumber, cold-pressed.",
-    "price": 6.0,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=96"
-  },
-  {
-    "id": "item-907",
-    "name": "Classic Orange Juice",
-    "description": "Freshly squeezed every morning.",
-    "price": 4.5,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=97"
-  },
-  {
-    "id": "item-908",
-    "name": "Hot English Breakfast Tea",
-    "description": "Strong black tea, perfect with milk and sugar.",
-    "price": 3.0,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=98"
-  },
-  {
-    "id": "item-909",
-    "name": "Chai Spice Milkshake",
-    "description": "Vanilla ice cream blended with chai spices and milk.",
-    "price": 6.5,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=99"
-  },
-  {
-    "id": "item-910",
-    "name": "Root Beer Float",
-    "description": "A classic with vanilla bean ice cream and crisp root beer.",
-    "price": 5.0,
-    "categoryId": "cat-9",
-    "image": "https://picsum.photos/300/200?random=100"
-  },
-  {
-    "id": "item-1001",
-    "name": "Truffle Parmesan Fries",
-    "description": "Golden fries tossed with truffle oil, parmesan, and parsley.",
-    "price": 7.0,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=101"
-  },
-  {
-    "id": "item-1002",
-    "name": "Sweet Potato Fries",
-    "description": "Served with a side of maple dipping sauce.",
-    "price": 6.5,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=102"
-  },
-  {
-    "id": "item-1003",
-    "name": "Onion Rings",
-    "description": "Thick-cut, battered onion rings served with ranch dressing.",
-    "price": 5.99,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=103"
-  },
-  {
-    "id": "item-1004",
-    "name": "Mozzarella Sticks",
-    "description": "Crispy fried mozzarella with a side of marinara sauce.",
-    "price": 8.5,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=104"
-  },
-  {
-    "id": "item-1005",
-    "name": "Side Salad",
-    "description": "Mixed greens, cherry tomatoes, and cucumber with vinaigrette.",
-    "price": 4.0,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=105"
-  },
-  {
-    "id": "item-1006",
-    "name": "Coleslaw (Small)",
-    "description": "Creamy, tangy shredded cabbage and carrot slaw.",
-    "price": 3.5,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=106"
-  },
-  {
-    "id": "item-1007",
-    "name": "Garlic Bread",
-    "description": "Toasted Italian bread with garlic butter and herbs.",
-    "price": 4.99,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=107"
-  },
-  {
-    "id": "item-1008",
-    "name": "Salsa & Guacamole Duo",
-    "description": "Fresh salsa and house-made guacamole with tortilla chips.",
-    "price": 9.0,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=108"
-  },
-  {
-    "id": "item-1009",
-    "name": "Steamed Vegetables",
-    "description": "A mix of seasonal steamed vegetables (broccoli, carrots, green beans).",
-    "price": 5.5,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=109"
-  },
-  {
-    "id": "item-1010",
-    "name": "Pico de Gallo",
-    "description": "Fresh diced tomato, onion, cilantro, and jalapeño.",
-    "price": 3.0,
-    "categoryId": "cat-10",
-    "image": "https://picsum.photos/300/200?random=110"
-  },
-  {
-    "id": "item-1101",
-    "name": "Chicken Tikka Masala",
-    "description": "Tender chicken cooked in a rich, creamy tomato sauce.",
-    "price": 16.99,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=111"
-  },
-  {
-    "id": "item-1102",
-    "name": "Paneer Butter Masala",
-    "description": "Cubes of Indian cheese in a butter-based tomato cream sauce.",
-    "price": 15.99,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=112"
-  },
-  {
-    "id": "item-1103",
-    "name": "Garlic Naan Bread",
-    "description": "Leavened flatbread brushed with garlic butter.",
-    "price": 3.5,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=113"
-  },
-  {
-    "id": "item-1104",
-    "name": "Lamb Rogan Josh",
-    "description": "Tender lamb cooked in a fragrant, spicy Kashmiri red chili gravy.",
-    "price": 18.99,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=114"
-  },
-  {
-    "id": "item-1105",
-    "name": "Vegetable Biryani",
-    "description": "Aromatic basmati rice cooked with mixed vegetables and spices.",
-    "price": 14.5,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=115"
-  },
-  {
-    "id": "item-1106",
-    "name": "Saag Paneer",
-    "description": "Spinach and mustard greens pureed and cooked with Indian cheese.",
-    "price": 15.5,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=116"
-  },
-  {
-    "id": "item-1107",
-    "name": "Butter Chicken",
-    "description": "Chicken pieces cooked in a mildly spiced tomato gravy.",
-    "price": 17.5,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=117"
-  },
-  {
-    "id": "item-1108",
-    "name": "Chana Masala",
-    "description": "Chickpeas cooked in a blend of Indian spices and tomatoes.",
-    "price": 13.99,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=118"
-  },
-  {
-    "id": "item-1109",
-    "name": "Tandoori Chicken (Half)",
-    "description": "Chicken marinated in yogurt and spices, roasted in a clay oven.",
-    "price": 16.0,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=119"
-  },
-  {
-    "id": "item-1110",
-    "name": "Samosas (2pc)",
-    "description": "Crispy pastries filled with spiced potatoes and peas.",
-    "price": 5.0,
-    "categoryId": "cat-11",
-    "image": "https://picsum.photos/300/200?random=120"
-  }
-]
+{
+  "products": [
+    {
+      "id": "item-101",
+      "name": "The Classic Lite Burger",
+      "description": "A juicy beef patty, cheddar, lettuce, and our signature Lite sauce on a brioche bun.",
+      "price": 12.99,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=11"
+    },
+    {
+      "id": "item-102",
+      "name": "Smoky BBQ Burger",
+      "description": "Topped with crispy onion rings, smoky BBQ glaze, and Swiss cheese.",
+      "price": 14.5,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=12"
+    },
+    {
+      "id": "item-103",
+      "name": "Mushroom & Swiss Burger",
+      "description": "Sautéed exotic mushrooms and melted Swiss cheese.",
+      "price": 13.99,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=13"
+    },
+    {
+      "id": "item-104",
+      "name": "Spicy Jalapeño Burger",
+      "description": "For those who like heat: pickled jalapeños, pepper jack cheese, and spicy mayo.",
+      "price": 13.5,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=14"
+    },
+    {
+      "id": "item-105",
+      "name": "Turkey Avocado Burger",
+      "description": "Lean ground turkey patty topped with fresh avocado and lime aioli.",
+      "price": 15.25,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=15"
+    },
+    {
+      "id": "item-106",
+      "name": "Vegetarian Black Bean Burger",
+      "description": "A flavorful black bean patty with corn salsa and chipotle sauce.",
+      "price": 11.99,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=16"
+    },
+    {
+      "id": "item-107",
+      "name": "Double Cheese Beast",
+      "description": "Two beef patties, four slices of cheese, and bacon. Go big or go home.",
+      "price": 17.99,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=17"
+    },
+    {
+      "id": "item-108",
+      "name": "The Californian Burger",
+      "description": "Topped with sprouts, tomato, onion, and a fresh basil pesto.",
+      "price": 14.75,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=18"
+    },
+    {
+      "id": "item-109",
+      "name": "Breakfast Burger",
+      "description": "Beef patty, fried egg, hash brown, and hollandaise sauce.",
+      "price": 14.99,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=19"
+    },
+    {
+      "id": "item-110",
+      "name": "Bacon Jam Burger",
+      "description": "Sweet and savory bacon jam with creamy goat cheese.",
+      "price": 15.5,
+      "categoryId": "cat-1",
+      "image": "https://picsum.photos/300/200?random=20"
+    },
+    {
+      "id": "item-201",
+      "name": "Margherita Pizza",
+      "description": "San Marzano tomatoes, fresh mozzarella, and basil.",
+      "price": 16.0,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=21"
+    },
+    {
+      "id": "item-202",
+      "name": "Pepperoni Feast Pizza",
+      "description": "Loads of spicy pepperoni and three types of Italian cheese.",
+      "price": 18.0,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=22"
+    },
+    {
+      "id": "item-203",
+      "name": "Truffle Mushroom Pizza",
+      "description": "White truffle oil, wild mushrooms, and Gorgonzola cheese.",
+      "price": 21.5,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=23"
+    },
+    {
+      "id": "item-204",
+      "name": "Hawaiian Luau Pizza",
+      "description": "Pineapple, smoked ham, and a sweet red sauce.",
+      "price": 17.5,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=24"
+    },
+    {
+      "id": "item-205",
+      "name": "Meat Lover's Delight",
+      "description": "Sausage, bacon, pepperoni, and ground beef.",
+      "price": 20.0,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=25"
+    },
+    {
+      "id": "item-206",
+      "name": "Pesto Veggie Pizza",
+      "description": "House-made pesto base, cherry tomatoes, and bell peppers.",
+      "price": 16.99,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=26"
+    },
+    {
+      "id": "item-207",
+      "name": "Spicy Chicken Ranch",
+      "description": "Grilled chicken, ranch dressing swirl, and buffalo hot sauce.",
+      "price": 18.5,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=27"
+    },
+    {
+      "id": "item-208",
+      "name": "Four Cheese Blend",
+      "description": "A classic blend of mozzarella, provolone, parmesan, and ricotta.",
+      "price": 15.5,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=28"
+    },
+    {
+      "id": "item-209",
+      "name": "Mediterranean Pizza",
+      "description": "Feta cheese, olives, sun-dried tomatoes, and oregano.",
+      "price": 17.75,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=29"
+    },
+    {
+      "id": "item-210",
+      "name": "The White Garlic Pizza",
+      "description": "No tomato sauce. Just garlic butter, mozzarella, and herbs.",
+      "price": 16.25,
+      "categoryId": "cat-2",
+      "image": "https://picsum.photos/300/200?random=30"
+    },
+    {
+      "id": "item-301",
+      "name": "Carne Asada Tacos",
+      "description": "Grilled marinated steak, onions, cilantro, and salsa verde.",
+      "price": 4.5,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=31"
+    },
+    {
+      "id": "item-302",
+      "name": "Spicy Chicken Burrito",
+      "description": "Rice, beans, chicken, cheese, and a fiery habanero sauce wrapped in a large tortilla.",
+      "price": 11.0,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=32"
+    },
+    {
+      "id": "item-303",
+      "name": "Al Pastor Tacos",
+      "description": "Pork marinated in chiles and spices, served with pineapple.",
+      "price": 4.75,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=33"
+    },
+    {
+      "id": "item-304",
+      "name": "Fish Tacos (Baja Style)",
+      "description": "Crispy fried cod, cabbage slaw, and creamy lime dressing.",
+      "price": 5.0,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=34"
+    },
+    {
+      "id": "item-305",
+      "name": "Vegetarian Fajita Burrito",
+      "description": "Sautéed bell peppers, onions, rice, and fresh guacamole.",
+      "price": 10.5,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=35"
+    },
+    {
+      "id": "item-306",
+      "name": "Shrimp Tacos",
+      "description": "Grilled shrimp with a chipotle-lime marinade.",
+      "price": 5.5,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=36"
+    },
+    {
+      "id": "item-307",
+      "name": "Beef Barbacoa Burrito Bowl",
+      "description": "Slow-cooked shredded beef served over rice and beans (no tortilla).",
+      "price": 12.0,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=37"
+    },
+    {
+      "id": "item-308",
+      "name": "Taco Platter (Mix & Match)",
+      "description": "A selection of three different tacos (Chicken, Beef, Veggie).",
+      "price": 13.0,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=38"
+    },
+    {
+      "id": "item-309",
+      "name": "Quesabirria Tacos",
+      "description": "Cheese-filled tacos dipped in broth and fried, served with consommé.",
+      "price": 5.25,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=39"
+    },
+    {
+      "id": "item-310",
+      "name": "Massive Nachos Grande",
+      "description": "Tortilla chips loaded with queso, beans, sour cream, and choice of meat.",
+      "price": 14.5,
+      "categoryId": "cat-3",
+      "image": "https://picsum.photos/300/200?random=40"
+    },
+    {
+      "id": "item-401",
+      "name": "Classic Caesar Salad",
+      "description": "Romaine, croutons, parmesan, and Caesar dressing.",
+      "price": 9.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=41"
+    },
+    {
+      "id": "item-402",
+      "name": "Ahi Tuna Poke Bowl",
+      "description": "Diced raw tuna, sticky rice, avocado, and soy-ginger dressing.",
+      "price": 17.0,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=42"
+    },
+    {
+      "id": "item-403",
+      "name": "Grilled Chicken Cobb Salad",
+      "description": "Chicken, bacon, egg, avocado, blue cheese, and red wine vinaigrette.",
+      "price": 14.99,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=43"
+    },
+    {
+      "id": "item-404",
+      "name": "Southwest Quinoa Salad",
+      "description": "Quinoa, black beans, corn, bell peppers, and chipotle-lime dressing.",
+      "price": 12.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=44"
+    },
+    {
+      "id": "item-405",
+      "name": "Greek Village Salad",
+      "description": "Tomatoes, cucumbers, olives, red onion, and feta with a lemon dressing.",
+      "price": 11.99,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=45"
+    },
+    {
+      "id": "item-406",
+      "name": "Steak Salad with Blue Cheese",
+      "description": "Grilled sliced sirloin steak over mixed greens with candied pecans.",
+      "price": 18.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=46"
+    },
+    {
+      "id": "item-407",
+      "name": "Caprese Salad",
+      "description": "Fresh mozzarella, ripe tomatoes, basil, and a balsamic glaze.",
+      "price": 10.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=47"
+    },
+    {
+      "id": "item-408",
+      "name": "Harvest Apple Salad",
+      "description": "Mixed greens, sliced apples, walnuts, and a cider vinaigrette.",
+      "price": 13.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=48"
+    },
+    {
+      "id": "item-409",
+      "name": "Shrimp & Citrus Salad",
+      "description": "Grilled shrimp, orange segments, avocado, and lime dressing.",
+      "price": 16.5,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=49"
+    },
+    {
+      "id": "item-410",
+      "name": "Asian Sesame Chicken Salad",
+      "description": "Shredded chicken, mandarins, crunchy noodles, and sesame dressing.",
+      "price": 15.25,
+      "categoryId": "cat-4",
+      "image": "https://picsum.photos/300/200?random=50"
+    },
+    {
+      "id": "item-501",
+      "name": "Spicy Dan Dan Noodles",
+      "description": "Wok-tossed noodles in a rich, savory, and spicy peanut sauce.",
+      "price": 13.99,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=51"
+    },
+    {
+      "id": "item-502",
+      "name": "Pad Thai",
+      "description": "Classic Thai rice noodles, tamarind sauce, peanuts, and tofu or shrimp.",
+      "price": 14.5,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=52"
+    },
+    {
+      "id": "item-503",
+      "name": "Japanese Ramen Bowl",
+      "description": "Slow-simmered pork bone broth with chashu pork, egg, and nori.",
+      "price": 16.0,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=53"
+    },
+    {
+      "id": "item-504",
+      "name": "Vietnamese Pho",
+      "description": "Aromatic beef broth with rice noodles, tender beef slices, and fresh herbs.",
+      "price": 15.5,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=54"
+    },
+    {
+      "id": "item-505",
+      "name": "Lo Mein (Veggie)",
+      "description": "Thick egg noodles tossed with mixed vegetables and a light soy sauce.",
+      "price": 12.99,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=55"
+    },
+    {
+      "id": "item-506",
+      "name": "Soba Noodle Salad",
+      "description": "Chilled soba noodles with edamame, shredded carrot, and citrus dressing.",
+      "price": 13.5,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=56"
+    },
+    {
+      "id": "item-507",
+      "name": "Singapore Street Noodles",
+      "description": "Curry-seasoned rice vermicelli with shrimp, char siu pork, and bean sprouts.",
+      "price": 15.25,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=57"
+    },
+    {
+      "id": "item-508",
+      "name": "Udon Noodle Soup",
+      "description": "Thick wheat flour noodles in a dashi broth with tempura flakes and scallions.",
+      "price": 14.0,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=58"
+    },
+    {
+      "id": "item-509",
+      "name": "Garlic Butter Noodles",
+      "description": "Simple, rich noodles tossed in melted garlic butter and parmesan.",
+      "price": 11.99,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=59"
+    },
+    {
+      "id": "item-510",
+      "name": "Chili Oil Wontons",
+      "description": "Pork and shrimp wontons drenched in aromatic chili oil sauce.",
+      "price": 10.99,
+      "categoryId": "cat-5",
+      "image": "https://picsum.photos/300/200?random=60"
+    },
+    {
+      "id": "item-601",
+      "name": "Molten Lava Chocolate Cake",
+      "description": "Warm chocolate cake with a gooey, molten center, served with vanilla ice cream.",
+      "price": 7.5,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=61"
+    },
+    {
+      "id": "item-602",
+      "name": "New York Cheesecake",
+      "description": "Classic creamy cheesecake on a graham cracker crust, topped with berry compote.",
+      "price": 6.99,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=62"
+    },
+    {
+      "id": "item-603",
+      "name": "Salted Caramel Brownie",
+      "description": "Fudgy brownie squares drizzled with rich salted caramel sauce.",
+      "price": 5.5,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=63"
+    },
+    {
+      "id": "item-604",
+      "name": "Key Lime Pie",
+      "description": "Tart and sweet lime filling in a buttery crust, finished with whipped cream.",
+      "price": 6.25,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=64"
+    },
+    {
+      "id": "item-605",
+      "name": "Tiramisu Cups",
+      "description": "Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa.",
+      "price": 7.0,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=65"
+    },
+    {
+      "id": "item-606",
+      "name": "Apple Crumble",
+      "description": "Warm, spiced baked apples topped with a crunchy oat crumble.",
+      "price": 5.99,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=66"
+    },
+    {
+      "id": "item-607",
+      "name": "Chocolate Chip Cookie Dough Skillet",
+      "description": "A warm skillet of fresh cookie dough, ready for two (or one).",
+      "price": 8.0,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=67"
+    },
+    {
+      "id": "item-608",
+      "name": "Lemon Ricotta Cake",
+      "description": "A light and airy cake infused with fresh lemon and creamy ricotta.",
+      "price": 6.75,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=68"
+    },
+    {
+      "id": "item-609",
+      "name": "Mango Sticky Rice",
+      "description": "Sweet sticky rice cooked in coconut milk, served with fresh mango slices.",
+      "price": 7.25,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=69"
+    },
+    {
+      "id": "item-610",
+      "name": "Assorted Mini Macarons (6pc)",
+      "description": "A selection of six colorful, flavored almond meringue cookies.",
+      "price": 9.5,
+      "categoryId": "cat-6",
+      "image": "https://picsum.photos/300/200?random=70"
+    },
+    {
+      "id": "item-701",
+      "name": "Grilled Salmon Fillet",
+      "description": "Lightly seasoned grilled salmon, served with roasted asparagus.",
+      "price": 22.0,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=71"
+    },
+    {
+      "id": "item-702",
+      "name": "Lemon Garlic Shrimp Scampi",
+      "description": "Shrimp sautéed in a lemon-garlic butter sauce over linguine.",
+      "price": 19.5,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=72"
+    },
+    {
+      "id": "item-703",
+      "name": "Fish and Chips (Cod)",
+      "description": "Crispy beer-battered cod and thick-cut fries, served with tartar sauce.",
+      "price": 16.0,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=73"
+    },
+    {
+      "id": "item-704",
+      "name": "Spicy Tuna Poke Bowl",
+      "description": "Raw tuna marinated in a spicy sesame sauce, over seasoned rice.",
+      "price": 17.5,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=74"
+    },
+    {
+      "id": "item-705",
+      "name": "Mussel Linguine",
+      "description": "Fresh mussels cooked in white wine, chili, and tomato sauce.",
+      "price": 18.99,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=75"
+    },
+    {
+      "id": "item-706",
+      "name": "Crab Cakes (2pc)",
+      "description": "Two house-made lump crab cakes with a spicy remoulade.",
+      "price": 21.0,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=76"
+    },
+    {
+      "id": "item-707",
+      "name": "Fried Calamari",
+      "description": "Crispy fried squid rings served with marinara sauce.",
+      "price": 12.5,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=77"
+    },
+    {
+      "id": "item-708",
+      "name": "Seared Scallops with Risotto",
+      "description": "Pan-seared sea scallops served over creamy saffron risotto.",
+      "price": 24.0,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=78"
+    },
+    {
+      "id": "item-709",
+      "name": "Tuna Melt Sandwich",
+      "description": "Classic tuna salad with melted cheddar on toasted sourdough.",
+      "price": 11.5,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=79"
+    },
+    {
+      "id": "item-710",
+      "name": "Oysters on the Half Shell (6pc)",
+      "description": "Half-dozen fresh oysters served with mignonette and cocktail sauce.",
+      "price": 19.99,
+      "categoryId": "cat-7",
+      "image": "https://picsum.photos/300/200?random=80"
+    },
+    {
+      "id": "item-801",
+      "name": "Avocado Toast with Egg",
+      "description": "Toasted sourdough, smashed avocado, everything bagel seasoning, and a fried egg.",
+      "price": 9.99,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=81"
+    },
+    {
+      "id": "item-802",
+      "name": "Fluffy Buttermilk Pancakes (Stack of 3)",
+      "description": "Served with butter and maple syrup.",
+      "price": 8.0,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=82"
+    },
+    {
+      "id": "item-803",
+      "name": "Breakfast Burrito Grande",
+      "description": "Scrambled eggs, sausage, potatoes, and cheese wrapped in a tortilla.",
+      "price": 11.5,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=83"
+    },
+    {
+      "id": "item-804",
+      "name": "French Toast with Berries",
+      "description": "Thick-cut bread dipped in cinnamon egg batter and topped with seasonal berries.",
+      "price": 10.5,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=84"
+    },
+    {
+      "id": "item-805",
+      "name": "Smoked Salmon Bagel",
+      "description": "Toasted bagel with cream cheese, smoked salmon, capers, and red onion.",
+      "price": 13.0,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=85"
+    },
+    {
+      "id": "item-806",
+      "name": "Veggie Omelette",
+      "description": "Three-egg omelette filled with spinach, mushrooms, tomatoes, and feta.",
+      "price": 12.0,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=86"
+    },
+    {
+      "id": "item-807",
+      "name": "Waffles and Fried Chicken",
+      "description": "A southern classic: crispy fried chicken with sweet waffles and hot honey.",
+      "price": 15.99,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=87"
+    },
+    {
+      "id": "item-808",
+      "name": "Granola & Yogurt Parfait",
+      "description": "Layers of Greek yogurt, crunchy granola, and fresh fruit.",
+      "price": 7.5,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=88"
+    },
+    {
+      "id": "item-809",
+      "name": "Sausage and Eggs Platter",
+      "description": "Two eggs (any style), two sausage patties, and hash browns.",
+      "price": 11.99,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=89"
+    },
+    {
+      "id": "item-810",
+      "name": "Huevos Rancheros",
+      "description": "Fried eggs served upon corn tortillas, topped with salsa and avocado.",
+      "price": 12.5,
+      "categoryId": "cat-8",
+      "image": "https://picsum.photos/300/200?random=90"
+    },
+    {
+      "id": "item-901",
+      "name": "House-Made Lemonade",
+      "description": "Freshly squeezed lemons, lightly sweetened.",
+      "price": 3.5,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=91"
+    },
+    {
+      "id": "item-902",
+      "name": "Iced Coffee (Cold Brew)",
+      "description": "Smooth, strong cold brew coffee, served over ice.",
+      "price": 4.0,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=92"
+    },
+    {
+      "id": "item-903",
+      "name": "Mango Smoothie",
+      "description": "A blend of fresh mango, yogurt, and a touch of honey.",
+      "price": 5.5,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=93"
+    },
+    {
+      "id": "item-904",
+      "name": "Sparkling Water",
+      "description": "Bubbly and refreshing, with a twist of lime.",
+      "price": 2.5,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=94"
+    },
+    {
+      "id": "item-905",
+      "name": "Matcha Latte (Iced or Hot)",
+      "description": "Ceremonial grade matcha with your choice of milk.",
+      "price": 5.0,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=95"
+    },
+    {
+      "id": "item-906",
+      "name": "Green Detox Juice",
+      "description": "Spinach, kale, apple, and cucumber, cold-pressed.",
+      "price": 6.0,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=96"
+    },
+    {
+      "id": "item-907",
+      "name": "Classic Orange Juice",
+      "description": "Freshly squeezed every morning.",
+      "price": 4.5,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=97"
+    },
+    {
+      "id": "item-908",
+      "name": "Hot English Breakfast Tea",
+      "description": "Strong black tea, perfect with milk and sugar.",
+      "price": 3.0,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=98"
+    },
+    {
+      "id": "item-909",
+      "name": "Chai Spice Milkshake",
+      "description": "Vanilla ice cream blended with chai spices and milk.",
+      "price": 6.5,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=99"
+    },
+    {
+      "id": "item-910",
+      "name": "Root Beer Float",
+      "description": "A classic with vanilla bean ice cream and crisp root beer.",
+      "price": 5.0,
+      "categoryId": "cat-9",
+      "image": "https://picsum.photos/300/200?random=100"
+    },
+    {
+      "id": "item-1001",
+      "name": "Truffle Parmesan Fries",
+      "description": "Golden fries tossed with truffle oil, parmesan, and parsley.",
+      "price": 7.0,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=101"
+    },
+    {
+      "id": "item-1002",
+      "name": "Sweet Potato Fries",
+      "description": "Served with a side of maple dipping sauce.",
+      "price": 6.5,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=102"
+    },
+    {
+      "id": "item-1003",
+      "name": "Onion Rings",
+      "description": "Thick-cut, battered onion rings served with ranch dressing.",
+      "price": 5.99,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=103"
+    },
+    {
+      "id": "item-1004",
+      "name": "Mozzarella Sticks",
+      "description": "Crispy fried mozzarella with a side of marinara sauce.",
+      "price": 8.5,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=104"
+    },
+    {
+      "id": "item-1005",
+      "name": "Side Salad",
+      "description": "Mixed greens, cherry tomatoes, and cucumber with vinaigrette.",
+      "price": 4.0,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=105"
+    },
+    {
+      "id": "item-1006",
+      "name": "Coleslaw (Small)",
+      "description": "Creamy, tangy shredded cabbage and carrot slaw.",
+      "price": 3.5,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=106"
+    },
+    {
+      "id": "item-1007",
+      "name": "Garlic Bread",
+      "description": "Toasted Italian bread with garlic butter and herbs.",
+      "price": 4.99,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=107"
+    },
+    {
+      "id": "item-1008",
+      "name": "Salsa & Guacamole Duo",
+      "description": "Fresh salsa and house-made guacamole with tortilla chips.",
+      "price": 9.0,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=108"
+    },
+    {
+      "id": "item-1009",
+      "name": "Steamed Vegetables",
+      "description": "A mix of seasonal steamed vegetables (broccoli, carrots, green beans).",
+      "price": 5.5,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=109"
+    },
+    {
+      "id": "item-1010",
+      "name": "Pico de Gallo",
+      "description": "Fresh diced tomato, onion, cilantro, and jalapeño.",
+      "price": 3.0,
+      "categoryId": "cat-10",
+      "image": "https://picsum.photos/300/200?random=110"
+    },
+    {
+      "id": "item-1101",
+      "name": "Chicken Tikka Masala",
+      "description": "Tender chicken cooked in a rich, creamy tomato sauce.",
+      "price": 16.99,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=111"
+    },
+    {
+      "id": "item-1102",
+      "name": "Paneer Butter Masala",
+      "description": "Cubes of Indian cheese in a butter-based tomato cream sauce.",
+      "price": 15.99,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=112"
+    },
+    {
+      "id": "item-1103",
+      "name": "Garlic Naan Bread",
+      "description": "Leavened flatbread brushed with garlic butter.",
+      "price": 3.5,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=113"
+    },
+    {
+      "id": "item-1104",
+      "name": "Lamb Rogan Josh",
+      "description": "Tender lamb cooked in a fragrant, spicy Kashmiri red chili gravy.",
+      "price": 18.99,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=114"
+    },
+    {
+      "id": "item-1105",
+      "name": "Vegetable Biryani",
+      "description": "Aromatic basmati rice cooked with mixed vegetables and spices.",
+      "price": 14.5,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=115"
+    },
+    {
+      "id": "item-1106",
+      "name": "Saag Paneer",
+      "description": "Spinach and mustard greens pureed and cooked with Indian cheese.",
+      "price": 15.5,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=116"
+    },
+    {
+      "id": "item-1107",
+      "name": "Butter Chicken",
+      "description": "Chicken pieces cooked in a mildly spiced tomato gravy.",
+      "price": 17.5,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=117"
+    },
+    {
+      "id": "item-1108",
+      "name": "Chana Masala",
+      "description": "Chickpeas cooked in a blend of Indian spices and tomatoes.",
+      "price": 13.99,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=118"
+    },
+    {
+      "id": "item-1109",
+      "name": "Tandoori Chicken (Half)",
+      "description": "Chicken marinated in yogurt and spices, roasted in a clay oven.",
+      "price": 16.0,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=119"
+    },
+    {
+      "id": "item-1110",
+      "name": "Samosas (2pc)",
+      "description": "Crispy pastries filled with spiced potatoes and peas.",
+      "price": 5.0,
+      "categoryId": "cat-11",
+      "image": "https://picsum.photos/300/200?random=120"
+    }
+  ]
+}
