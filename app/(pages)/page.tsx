@@ -1,12 +1,17 @@
-"use client";
-import { Button } from "react-aria-components";
+import ProductFilter from "@/components/filter/product-filter";
+import ProductSearchComponent from "@/components/filter/product-search";
+import ProductList from "@/components/product-list";
 
-export default function Home() {
+export default function MenuPage() {
   return (
-    <div className="menu min-h-screen layout-grid">
-      <header className="col-span-full p-32">
-        <Button className="btn-icon btn-primary">Dive</Button>
-      </header>
+    <div className="product-list bg-backgruond-elevated-1 section">
+      <div className="layout-grid">
+        <div className="filters col-span-full w-full h-full md:py-2 md:px-4 sticky top-4 z-50 flex flex-row gap-x-2 justify-between items-center">
+          <ProductFilter />
+          <ProductSearchComponent />
+        </div>
+        <ProductList />
+      </div>
     </div>
   );
 }
