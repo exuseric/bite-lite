@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Open_Sans, Zalando_Sans_Expanded } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/main-navigation";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bodyFont = Open_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const displayFont = Zalando_Sans_Expanded({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${displayFont.variable} ${bodyFont.variable} antialiased bg-background text-foreground font-body font-normal leading-normal p-0`}
       >
-        {children}
+        <Navigation />
+        <main>{children}</main>
       </body>
     </html>
   );

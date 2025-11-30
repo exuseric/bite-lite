@@ -1,0 +1,151 @@
+{
+  "categories": [
+    {
+      "id": "burgers",
+      "name": "Burgers",
+      "slug": "burgers",
+      "items": [
+        {
+          "id": "burger-classic-001",
+          "name": "Classic Beef Burger",
+          "slug": "classic-beef-burger",
+          "description": "Juicy Kenyan beef patty, melted cheese, lettuce, tomato, and house sauce.",
+          "price": 650,
+          "image": "https://picsum.photos/1000",
+          "inventory": 18,
+          "rating": 4.6,
+          "tags": ["beef", "grilled", "popular"],
+          "prepTimeMin": 12
+        },
+        {
+          "id": "burger-chicken-002",
+          "name": "Crispy Chicken Burger",
+          "slug": "crispy-chicken-burger",
+          "description": "Crispy fried chicken breast, coleslaw, pickles, and spicy mayo.",
+          "price": 720,
+          "image": "https://picsum.photos/1000",
+          "inventory": 22,
+          "rating": 4.4,
+          "tags": ["chicken", "crispy"],
+          "prepTimeMin": 10
+        },
+        {
+          "id": "burger-vegan-003",
+          "name": "Vegan Delight Burger",
+          "slug": "vegan-delight-burger",
+          "description": "Plant-based patty, avocado slices, grilled onions, and vegan aioli.",
+          "price": 780,
+          "image": "https://picsum.photos/1000",
+          "inventory": 12,
+          "rating": 4.1,
+          "tags": ["vegan"],
+          "prepTimeMin": 14
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "slug": "drinks",
+      "items": [
+        {
+          "id": "drink-soda-101",
+          "name": "Coca-Cola",
+          "slug": "coca-cola",
+          "description": "Refreshing chilled Coke.",
+          "price": 120,
+          "image": "https://picsum.photos/1000",
+          "inventory": 40,
+          "rating": 4.8,
+          "tags": ["cold"],
+          "prepTimeMin": 1
+        },
+        {
+          "id": "drink-juice-102",
+          "name": "Fresh Mango Juice",
+          "slug": "fresh-mango-juice",
+          "description": "Blended fresh mangoes with no added sugar.",
+          "price": 250,
+          "image": "https://picsum.photos/1000",
+          "inventory": 25,
+          "rating": 4.5,
+          "tags": ["fresh", "juice"],
+          "prepTimeMin": 2
+        },
+        {
+          "id": "drink-milkshake-103",
+          "name": "Chocolate Milkshake",
+          "slug": "chocolate-milkshake",
+          "description": "Creamy chocolate shake topped with whipped cream.",
+          "price": 350,
+          "image": "https://picsum.photos/1000",
+          "inventory": 15,
+          "rating": 4.7,
+          "tags": ["milkshake"],
+          "prepTimeMin": 3
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "id": "dessert-icecream-201",
+          "name": "Vanilla Ice Cream Cup",
+          "slug": "vanilla-ice-cream-cup",
+          "description": "Smooth vanilla ice cream with optional chocolate drizzle.",
+          "price": 300,
+          "image": "https://picsum.photos/1000",
+          "inventory": 20,
+          "rating": 4.3,
+          "tags": ["cold", "sweet"],
+          "prepTimeMin": 2
+        },
+        {
+          "id": "dessert-brownie-202",
+          "name": "Chocolate Brownie",
+          "slug": "chocolate-brownie",
+          "description": "Warm gooey brownie with rich chocolate chunks.",
+          "price": 280,
+          "image": "https://picsum.photos/1000",
+          "inventory": 14,
+          "rating": 4.6,
+          "tags": ["baked", "chocolate"],
+          "prepTimeMin": 5
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "Sides",
+      "slug": "sides",
+      "items": [
+        {
+          "id": "side-fries-301",
+          "name": "French Fries",
+          "slug": "french-fries",
+          "description": "Golden crispy fries with a side of ketchup.",
+          "price": 200,
+          "image": "https://picsum.photos/1000",
+          "inventory": 30,
+          "rating": 4.2,
+          "tags": ["fried", "popular"],
+          "prepTimeMin": 7
+        },
+        {
+          "id": "side-wings-302",
+          "name": "Spicy Chicken Wings",
+          "slug": "spicy-chicken-wings",
+          "description": "6-piece wings tossed in house-made spicy sauce.",
+          "price": 550,
+          "image": "https://picsum.photos/1000",
+          "inventory": 16,
+          "rating": 4.5,
+          "tags": ["spicy", "chicken"],
+          "prepTimeMin": 12
+        }
+      ]
+    }
+  ]
+}

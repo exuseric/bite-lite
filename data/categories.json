@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Gourmet Burgers",
+      "slug": "burgers",
+      "description": "Hand-pressed patties with locally sourced ingredients."
+    },
+    {
+      "id": "cat-2",
+      "name": "Artisan Pizzas",
+      "slug": "pizzas",
+      "description": "Stone-baked to perfection with authentic Italian flavor."
+    },
+    {
+      "id": "cat-3",
+      "name": "Spicy Tacos & Burritos",
+      "slug": "tacos",
+      "description": "Mexican street food classics, served hot and fresh."
+    },
+    {
+      "id": "cat-4",
+      "name": "Fresh Salads",
+      "slug": "salads",
+      "description": "Crisp greens and light dressings for a healthy bite."
+    },
+    {
+      "id": "cat-5",
+      "name": "Global Noodle Bowls",
+      "slug": "noodles",
+      "description": "Wok-tossed noodles inspired by Asian street markets."
+    },
+    {
+      "id": "cat-6",
+      "name": "Sweet Desserts",
+      "slug": "desserts",
+      "description": "The perfect end to any meal, from cake to ice cream."
+    },
+    {
+      "id": "cat-7",
+      "name": "Seafood Delights",
+      "slug": "seafood",
+      "description": "Ocean-fresh catches, grilled and seasoned to perfection."
+    },
+    {
+      "id": "cat-8",
+      "name": "Breakfast Staples",
+      "slug": "breakfast",
+      "description": "Start your day the right way with hearty, classic dishes."
+    },
+    {
+      "id": "cat-9",
+      "name": "Signature Drinks",
+      "slug": "drinks",
+      "description": "Refreshing house-made sodas, juices, and teas."
+    },
+    {
+      "id": "cat-10",
+      "name": "Side Kicks",
+      "slug": "sides",
+      "description": "Small bites that pack a big punch."
+    }
+  ]
+}
