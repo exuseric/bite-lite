@@ -7,13 +7,29 @@ import Image from "next/image";
 import { Button, Group, Input, NumberField } from "react-aria-components";
 import Spacer from "@/components/spacer";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function CartItems({ item }: { item: CartItem; simple?: boolean }) {
   const updateQuantity = useCartStore((state) => state.updateQuantity);
   const deleteItem = useCartStore((state) => state.removeFromCart);
 
   return (
-    <div className="w-full">
+    <motion.div
+      layout
+      variants={{
+        hidden: { opacity: 0, y: -10, filter: "blur(6px)" },
+        visible: {
+          opacity: 1,
+          y: 0,
+          filter: "none",
+          transition: { ease: ["easeIn", "easeOut"] },
+        },
+      }}
+      exit="hidden"
+      animate="visible"
+      initial="visible"
+      className="w-full"
+    >
       <article className="flex flex-row items-center gap-x-4 w-full">
         <div className="aspect-square h-30 w-40 relative bg-background-elevated-1 overflow-hidden rounded-md">
           <Image src={item.image} fill={true} alt={item.name} style={{ objectFit: "cover" }} />
@@ -66,6 +82,6 @@ export default function CartItems({ item }: { item: CartItem; simple?: boolean }
         </div>
       </article>
       <Spacer />
-    </div>
+    </motion.div>
   );
 }

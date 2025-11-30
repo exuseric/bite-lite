@@ -4,6 +4,7 @@ import CartItem from "@/components/cart/cart-item";
 import CartSummary from "@/components/cart/cart-summary";
 import useCartStore from "@/store/cart-store";
 import { X } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { Button } from "react-aria-components";
 
 export default function Cart() {
@@ -21,9 +22,11 @@ export default function Cart() {
           </Button>
         </header>
         <div className="col-span-full md:col-start-1 md:col-end-8 h-fit flex flex-col w-full items-start  gap-y-4">
-          {items.map((item) => (
-            <CartItem item={item} key={item.id} />
-          ))}
+          <AnimatePresence mode="popLayout">
+            {items.map((item) => (
+              <CartItem item={item} key={item.id} />
+            ))}
+          </AnimatePresence>
         </div>
         <div className="summary col-span-full md:col-start-9 md:-col-end-1  align-self-end">
           <CartSummary />

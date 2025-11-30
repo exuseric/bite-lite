@@ -16,6 +16,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
+import { AnimatePresence, motion, stagger } from "motion/react";
 
 export default function ProductSearchComponent() {
   const searchTerm = useProductStore((state) => state.searchTerm);
@@ -66,24 +67,70 @@ export default function ProductSearchComponent() {
           </SearchField>
         </SheetHeader>
 
-        <div className="flex flex-col justify-start gap-y-4 h-fit max-h-full overflow-hidden overflow-y-scroll overscroll-contain px-4">
-          {searchResults.slice(0, MAX_SEARCH_RESULTS).map((result) => (
-            <Link
-              href={`/products/${result.id}`}
-              className="w-full h-fit space-y-1 flex flex-row items-center gap-x-2 "
-              key={result.id}
-            >
-              <div className="aspect-square h-20 bg-background-elevated-1 mb-0 relative isolate overflow-hidden rounded-sm">
-                <Image src={result.image} fill={true} style={{ objectFit: "cover" }} alt={result.name} />
-              </div>
+        <motion.div
+          layout
+          variants={{
+            hidden: {
+              opacity: 0,
+              transition: {
+                when: "afterChildren",
+              },
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                when: "beforeChildren",
+                delayChildren: stagger(0.3),
+              },
+            },
+          }}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          className="flex flex-col justify-start gap-y-4 h-fit max-h-full overflow-hidden overflow-y-scroll overscroll-contain px-4"
+        >
+          <AnimatePresence mode="popLayout">
+            {searchResults.slice(0, MAX_SEARCH_RESULTS).map((result) => (
+              <motion.div
+                layout
+                key={result.id}
+                variants={{
+                  hidden: { opacity: 0, y: -10, filter: "blur(6px)" },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    filter: "none",
+                    transition: { ease: ["easeIn", "easeOut"] },
+                  },
+                  exit: {
+                    opacity: 0,
+                    y: 10,
+                    filter: "blur(6px)",
+                    transition: { duration: 0.25 },
+                  },
+                }}
+                exit="hidden"
+                animate="visible"
+                initial="hidden"
+                // transition={{ type: "spring" }}
+              >
+                <Link
+                  href={`/products/${result.id}`}
+                  className="w-full h-fit space-y-1 flex flex-row items-center gap-x-2 "
+                >
+                  <div className="aspect-square h-20 bg-background-elevated-1 mb-0 relative isolate overflow-hidden rounded-sm">
+                    <Image src={result.image} fill={true} style={{ objectFit: "cover" }} alt={result.name} />
+                  </div>
 
-              <div className="space-y-2">
-                <p className="font-semibold">{result.name}</p>
-                <p className="font-semibold text-neutral-700 text-sm">KSh {result.price}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
+                  <div className="space-y-2">
+                    <p className="font-semibold">{result.name}</p>
+                    <p className="font-semibold text-neutral-700 text-sm">KSh {result.price}</p>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
 
         {searchResults.length > MAX_SEARCH_RESULTS && (
           <SheetFooter className="border-t border-t-background-elevated-1">

@@ -2,6 +2,7 @@
 
 import useProductStore from "@/store/product-store";
 import { ProductItem } from "@/types/product-types";
+import { motion, stagger } from "motion/react";
 import Image from "next/image";
 import { useEffect } from "react";
 import { Link } from "react-aria-components";
@@ -28,7 +29,21 @@ export default function ProductList() {
 
 function ProductCard({ product }: { product: ProductItem }) {
   return (
-    <article key={product.id} className="flex flex-col items-start gap-y-4">
+    <motion.article
+      variants={{
+        visible: {
+          opacity: 1,
+          y: 0,
+        },
+        hidden: { opacity: 0, y: 20 },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      exit="hidden"
+      transition={{ ease: ["easeIn", "easeOut"] }}
+      key={product.id}
+      className="flex flex-col items-start gap-y-4"
+    >
       <Link
         href={`/products/${product.id}`}
         aria-labelledby={`item-${product.name}`}
@@ -47,6 +62,6 @@ function ProductCard({ product }: { product: ProductItem }) {
           <p className="w-full max-w-[35ch]">{product.description}</p>
         </section>
       </Link>
-    </article>
+    </motion.article>
   );
 }
