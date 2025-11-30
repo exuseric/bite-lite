@@ -14,7 +14,7 @@ export default function ProductFilter() {
   }, []);
 
   return (
-    <div className="filters col-span-full md:col-start-1 md:col-end-4 md:h-screen md:justify-start md:items-start md:overflow-hidden md:overflow-y-scroll md:overscroll-contain w-full h-full py-2 md:py-4 md:px-4 sticky top-20 z-50 flex flex-row gap-x-2 justify-between items-center bg-background border-b border-b-background-elevated-4">
+    <div className="filters col-span-full md:col-start-1 md:col-end-4 md:h-screen md:justify-start md:items-start md:overflow-hidden md:overflow-y-scroll md:overscroll-contain w-full h-full py-2 md:py-4 md:px-4 sticky top-20 z-50 flex flex-row gap-x-2 justify-between items-center bg-background max-sm:border-b max-sm:border-b-background-elevated-4">
       <ProductFilters>
         <CollapsibleFilter filter={categories} label="Categories" />
       </ProductFilters>

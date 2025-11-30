@@ -198,7 +198,7 @@
     }
 
     .section {
-        @apply px-4 my-20 md:px-0 md:my-24;
+        @apply px-4 py-20 md:px-0 md:py-24;
     }
 
     /*BUTTON UTILITIES*/
@@ -271,12 +271,6 @@
     }
 
     /*END OF BUTTONS*/
-}
-
-@layer utilities {
-    .search-wrapper:where(input[type="search"]:focus-within) {
-        @apply bg-red-500;
-    }
 }
 
 .dark {
