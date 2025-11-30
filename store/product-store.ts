@@ -1,4 +1,3 @@
-import categoriesData from "@/data/categories.json";
 import { create } from "zustand";
 import { ProductCategory, ProductItem } from "../types/product-types";
 
@@ -7,9 +6,14 @@ type StoreType = {
   categories: ProductCategory[];
   searchTerm: string;
   searchResults: ProductItem[];
+  activeCategories: string[];
+  filterResults: ProductItem[];
   getProducts: () => Promise<void>;
   getCategories: () => Promise<void>;
   setSearchTerm: (term: string) => void;
+  setActiveCategories: (categories: string[]) => void;
+  setFilterResults: () => void;
+  clearActiveFilter: () => void;
 };
 
 const useProductStore = create<StoreType>((set, get) => ({
@@ -17,6 +21,9 @@ const useProductStore = create<StoreType>((set, get) => ({
   categories: [],
   searchTerm: "",
   searchResults: [],
+  activeCategories: [],
+  filterResults: [],
+
   getProducts: async () => {
     const res = await fetch("/api/products");
     const data = await res.json();
@@ -38,6 +45,17 @@ const useProductStore = create<StoreType>((set, get) => ({
       searchResults: results,
     });
   },
+  setActiveCategories: (categories: string[]) => {
+    set({ activeCategories: categories });
+    get().setFilterResults();
+  },
+  setFilterResults: () => {
+    const { activeCategories, products } = get();
+    const results = products.filter((p) => activeCategories.includes(p.categoryId));
+
+    set({ filterResults: results });
+  },
+  clearActiveFilter: () => get().setActiveCategories([]),
 }));
 
 export default useProductStore;

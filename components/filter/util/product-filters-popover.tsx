@@ -12,7 +12,7 @@ export default function ProductFiltersPopover({ children }: { children: ReactEle
       </Button>
       <Popover
         offset={10}
-        placement="bottom"
+        placement="bottom start"
         className="bg-background border-2 border-background-elevated-4 rounded-md h-fit w-full shadow-lg md:w-fit p-4 max-sm:left-0!"
       >
         <Dialog>{children}</Dialog>

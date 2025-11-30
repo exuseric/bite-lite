@@ -8,7 +8,10 @@ import { Link } from "react-aria-components";
 
 export default function ProductList() {
   const products = useProductStore((s) => s.products);
+  const filterResults = useProductStore((s) => s.filterResults);
+
   const getProducts = useProductStore.getState().getProducts; // stable & safe
+  console.log(filterResults);
 
   useEffect(() => {
     getProducts();
@@ -16,9 +19,9 @@ export default function ProductList() {
 
   return (
     <div className="product-list flex flex-col px-4 col-span-full overscroll-contain md:grid md:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]">
-      {products.map((product) => (
-        <ProductCard product={product} key={product.id} />
-      ))}
+      {filterResults.length > 0
+        ? filterResults.map((product) => <ProductCard product={product} key={product.id} />)
+        : products.map((product) => <ProductCard product={product} key={product.id} />)}
     </div>
   );
 }
