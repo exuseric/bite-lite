@@ -4,26 +4,57 @@ import useProductStore from "@/store/product-store";
 import { ProductItem } from "@/types/product-types";
 import { motion, stagger } from "motion/react";
 import Image from "next/image";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { Link } from "react-aria-components";
 
-export default function ProductList() {
+export default function ProductList({ data }: { data: ProductItem[] }) {
   const products = useProductStore((s) => s.products);
   const filterResults = useProductStore((s) => s.filterResults);
 
-  const getProducts = useProductStore.getState().getProducts; // stable & safe
-  console.log(filterResults);
+  const setProducts = useProductStore.getState().setProducts;
+  const hydrated = useProductStore((s) => s.hydrated);
+
+  const listToShow = filterResults.length > 0 ? filterResults : products;
 
   useEffect(() => {
-    getProducts();
-  }, []);
+    setProducts(data);
+  }, [data, setProducts]);
 
   return (
     <div className="product-list flex flex-col px-4 col-span-full md:col-start-4 md:-col-end-1 md:px-0 overscroll-contain min-h-screen md:grid md:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]">
-      {filterResults.length > 0
-        ? filterResults.map((product) => <ProductCard product={product} key={product.id} />)
-        : products.map((product) => <ProductCard product={product} key={product.id} />)}
+      <Suspense fallback={<div>Loading products...</div>}>
+        {!hydrated
+          ? Array.from({ length: 6 }).map((_, i) => <Skeleton key={i} />)
+          : listToShow.map((product) => <ProductCard product={product} key={product.id} />)}
+      </Suspense>
     </div>
+  );
+}
+
+function Skeleton() {
+  return (
+    <motion.div
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 20 },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      exit="hidden"
+      transition={{ ease: ["easeIn", "easeOut"] }}
+      className="flex flex-col items-start gap-y-4 animate-pulse"
+    >
+      <div className="grid grid-cols-[auto_1fr] md:grid-cols-1 md:grid-rows-[auto_1fr] gap-x-4 items-start gap-y-2 w-full bg-background-elevated-1 md:px-3 py-4 rounded-md">
+        <div className="aspect-square w-34 md:w-full md:max-h-60 bg-gray-200 rounded-md" />
+        <section className="space-y-2 flex-1">
+          <header className="flex flex-col justify-between mb-1">
+            <div className="h-6 w-2/3 bg-gray-300 rounded-md mb-1" /> {/* Title */}
+            <div className="h-5 w-1/4 bg-gray-300 rounded-md" /> {/* Price */}
+          </header>
+          <div className="h-4 w-full max-w-[35ch] bg-gray-300 rounded-md" /> {/* Description */}
+        </section>
+      </div>
+    </motion.div>
   );
 }
 

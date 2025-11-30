@@ -18,6 +18,8 @@ type StoreType = {
   setFilterResults: (filterKey: FilterKey) => void;
   clearActiveFilter: (filterKey: FilterKey) => void;
   resetAllFilters: () => void;
+  setProducts: (products: ProductItem[]) => void;
+  hydrated: boolean;
 };
 
 const useProductStore = create<StoreType>((set, get) => ({
@@ -27,6 +29,7 @@ const useProductStore = create<StoreType>((set, get) => ({
   searchResults: [],
   activeCategories: [],
   filterResults: [],
+  hydrated: false,
 
   getProducts: async () => {
     const res = await fetch("/api/products");
@@ -66,6 +69,7 @@ const useProductStore = create<StoreType>((set, get) => ({
     set({ filterResults: [] });
     FILTER_KEYS.forEach((key) => get().clearActiveFilter(key));
   },
+  setProducts: (products) => set({ products, hydrated: true }),
 }));
 
 export default useProductStore;
