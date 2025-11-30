@@ -1,6 +1,9 @@
 import { create } from "zustand";
 import { ProductCategory, ProductItem } from "../types/product-types";
 
+export const FILTER_KEYS = ["activeCategories"] as const;
+export type FilterKey = (typeof FILTER_KEYS)[number];
+
 type StoreType = {
   products: ProductItem[];
   categories: ProductCategory[];
@@ -11,9 +14,10 @@ type StoreType = {
   getProducts: () => Promise<void>;
   getCategories: () => Promise<void>;
   setSearchTerm: (term: string) => void;
-  setActiveCategories: (categories: string[]) => void;
-  setFilterResults: () => void;
-  clearActiveFilter: () => void;
+  setActiveFilter: (filterKey: FilterKey, categories: string[]) => void;
+  setFilterResults: (filterKey: FilterKey) => void;
+  clearActiveFilter: (filterKey: FilterKey) => void;
+  resetAllFilters: () => void;
 };
 
 const useProductStore = create<StoreType>((set, get) => ({
@@ -45,17 +49,23 @@ const useProductStore = create<StoreType>((set, get) => ({
       searchResults: results,
     });
   },
-  setActiveCategories: (categories: string[]) => {
-    set({ activeCategories: categories });
-    get().setFilterResults();
+  setActiveFilter: (filterKey, filterIds) => {
+    set({ [filterKey]: filterIds });
+    get().setFilterResults(filterKey);
   },
-  setFilterResults: () => {
-    const { activeCategories, products } = get();
-    const results = products.filter((p) => activeCategories.includes(p.categoryId));
+  setFilterResults: (filterKey) => {
+    const { [filterKey]: filterValues, products } = get();
+    const results = products.filter((p) => filterValues.includes(p.categoryId));
 
     set({ filterResults: results });
   },
-  clearActiveFilter: () => get().setActiveCategories([]),
+  clearActiveFilter: (filterKey) => {
+    get().setActiveFilter(filterKey, []);
+  },
+  resetAllFilters: () => {
+    set({ filterResults: [] });
+    FILTER_KEYS.forEach((key) => get().clearActiveFilter(key));
+  },
 }));
 
 export default useProductStore;

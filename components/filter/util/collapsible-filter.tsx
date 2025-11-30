@@ -8,7 +8,9 @@ export default function CollapsibleFilter({ label, filter }: { filter: ProductCa
   const formRef = useRef<HTMLFormElement>(null);
   const activeCategories = useProductStore((state) => state.activeCategories);
   const setActiveCategories = useProductStore((state) => state.setActiveCategories);
+  // const clearActiveFilter = useProductStore((state) => state.clearActiveCategory);
   const clearActiveFilter = useProductStore((state) => state.clearActiveFilter);
+  const setActiveFilter = useProductStore((state) => state.setActiveFilter);
 
   const handleFilter = () => {
     const form = formRef.current;
@@ -19,12 +21,13 @@ export default function CollapsibleFilter({ label, filter }: { filter: ProductCa
     const selectedIds = new Set<string>();
     checked.forEach((check) => selectedIds.add(check.value));
 
-    setActiveCategories([...selectedIds]);
+    // setActiveCategories([...selectedIds]);
+    setActiveFilter("activeCategories", [...selectedIds]);
   };
 
   const handleReset = () => {
     formRef?.current?.reset();
-    clearActiveFilter();
+    clearActiveFilter("activeCategories");
   };
 
   return (
@@ -35,7 +38,7 @@ export default function CollapsibleFilter({ label, filter }: { filter: ProductCa
       </summary>
       <div className="space-y-3">
         <Form ref={formRef}>
-          <Button className="btn btn-ghost flex flex-row items-start gap-3" onPress={() => handleReset()}>
+          <Button className="btn btn-ghost btn-sm flex flex-row items-start gap-3" onPress={() => handleReset()}>
             <RotateCcw size={14} />
             Reset Filter
           </Button>
