@@ -18,7 +18,7 @@ export default function ProductList() {
   }, []);
 
   return (
-    <div className="product-list flex flex-col px-4 col-span-full overscroll-contain md:grid md:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]">
+    <div className="product-list flex flex-col px-4 col-span-full md:col-start-4 md:-col-end-1 md:px-0 overscroll-contain md:grid md:grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]">
       {filterResults.length > 0
         ? filterResults.map((product) => <ProductCard product={product} key={product.id} />)
         : products.map((product) => <ProductCard product={product} key={product.id} />)}
