@@ -29,7 +29,7 @@ export default function ProductFilters({ children }: { children: ReactElement })
               <Settings2Icon size={18} /> <span>Filter</span>
             </Button>
           </SheetTrigger>
-          <SheetContent className="px-0" side="left">
+          <SheetContent className="px-0 bg-background-elevated-1" side="left">
             <SheetHeader className="grid grid-cols-[1fr_auto] items-center border-b border-b-background-elevated-4">
               <SheetTitle className="">Filter</SheetTitle>
               <SheetDescription className="sr-only">Filter product items</SheetDescription>
