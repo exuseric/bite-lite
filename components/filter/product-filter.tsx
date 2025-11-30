@@ -14,8 +14,10 @@ export default function ProductFilter() {
   }, []);
 
   return (
-    <ProductFiltersPopover>
-      <CollapsibleFilter filter={categories} label="Categories" />
-    </ProductFiltersPopover>
+    <div className="filters col-span-full w-full h-full py-2 md:px-4 sticky top-20 z-50 flex flex-row gap-x-2 justify-between items-center bg-background border-b border-b-background-elevated-4">
+      <ProductFiltersPopover>
+        <CollapsibleFilter filter={categories} label="Categories" />
+      </ProductFiltersPopover>
+    </div>
   );
 }

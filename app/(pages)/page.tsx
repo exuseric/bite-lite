@@ -1,15 +1,11 @@
 import ProductFilter from "@/components/filter/product-filter";
-import ProductSearchComponent from "@/components/filter/product-search";
 import ProductList from "@/components/product-list";
 
-export default function MenuPage() {
+export default function ProductDetailsPage() {
   return (
     <div className="product-list bg-backgruond-elevated-1 section">
-      <div className="layout-grid gap-y-2!">
-        <div className="filters col-span-full w-full h-full md:py-2 md:px-4 sticky md:top-4 z-50 flex flex-row gap-x-2 justify-between items-center">
-          <ProductFilter />
-          <ProductSearchComponent />
-        </div>
+      <div className="layout-grid gap-y-2! isolate">
+        <ProductFilter />
         <ProductList />
       </div>
     </div>

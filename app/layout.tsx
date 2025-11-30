@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Zalando_Sans_Expanded } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/main-navigation";
 
 const bodyFont = Open_Sans({
   variable: "--font-body",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${displayFont.variable} ${bodyFont.variable} antialiased bg-background text-foreground font-body font-normal leading-normal p-0`}
       >
+        <Navigation />
         <main>{children}</main>
       </body>
     </html>
