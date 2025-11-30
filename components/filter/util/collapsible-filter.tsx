@@ -7,8 +7,6 @@ import { Button, Form } from "react-aria-components";
 export default function CollapsibleFilter({ label, filter }: { filter: ProductCategory[]; label: string }) {
   const formRef = useRef<HTMLFormElement>(null);
   const activeCategories = useProductStore((state) => state.activeCategories);
-  const setActiveCategories = useProductStore((state) => state.setActiveCategories);
-  // const clearActiveFilter = useProductStore((state) => state.clearActiveCategory);
   const clearActiveFilter = useProductStore((state) => state.clearActiveFilter);
   const setActiveFilter = useProductStore((state) => state.setActiveFilter);
 
@@ -21,7 +19,6 @@ export default function CollapsibleFilter({ label, filter }: { filter: ProductCa
     const selectedIds = new Set<string>();
     checked.forEach((check) => selectedIds.add(check.value));
 
-    // setActiveCategories([...selectedIds]);
     setActiveFilter("activeCategories", [...selectedIds]);
   };
 

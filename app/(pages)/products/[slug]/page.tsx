@@ -1,13 +1,12 @@
 import { AddToCartButton } from "@/components/cart/add-to-cart-button";
 import fetchSingleProduct from "@/lib/fetch-single-product";
 import { CartItem } from "@/store/cart-store";
-import { ProductItem } from "@/types/product-types";
 import Image from "next/image";
 
 export default async function ProductDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 
-  const product: ProductItem = await fetchSingleProduct(slug);
+  const product: CartItem = await fetchSingleProduct(slug);
 
   return (
     <section className="section">
@@ -21,7 +20,7 @@ export default async function ProductDetailsPage({ params }: { params: Promise<{
             <p className="text-2xl max-w-prose">KSh {product.price}</p>
           </header>
           <p>{product.description}</p>
-          <AddToCartButton product={product as CartItem} />
+          <AddToCartButton product={product} />
         </div>
       </div>
     </section>

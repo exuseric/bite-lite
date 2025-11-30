@@ -256,10 +256,14 @@
     }
 
     .btn-secondary-ghost {
-        @apply text-neutral-800 bg-transparent;
+        @apply text-neutral-800 bg-transparent hover:bg-background-elevated-4;
     }
     .btn-secondary-ghost:hover:not(:disabled) {
         @apply bg-neutral-100;
+    }
+
+    .btn-destructive-ghost {
+        @apply text-neutral-800 bg-transparent hover:text-red-900;
     }
 
     /* Icon-only buttons */

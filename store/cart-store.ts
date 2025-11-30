@@ -16,36 +16,24 @@ type CartStore = {
 
 const useCartStore = create(
   persist<CartStore>(
-    (set) => ({
+    (set, get) => ({
       cart: [],
-      addToCart: (product) =>
-        set((state) => {
-          const existing = state.cart.find((c) => c.id === product.id);
 
-          if (existing) {
-            return {
-              cart: state.cart.map((c) => (c.id === product.id ? { ...c, qty: c.qty + 1 } : c)),
-            };
-          }
+      addToCart: (product) => {
+        const cart = get().cart;
 
-          return {
-            cart: [...state.cart, product],
-          };
-        }),
+        const exists = cart.some((item) => item.id === product.id);
 
-      updateQuantity: ({ productId, qty }) =>
-        set((state) => {
-          if (qty <= 0) {
-            return {
-              cart: state.cart.map((item) => (item.id === productId ? { ...item, qty: 1 } : item)),
-            };
-          }
-
-          return {
-            cart: state.cart.map((item) => (item.id === productId ? { ...item, qty } : item)),
-          };
-        }),
-
+        if (!exists) {
+          set({ cart: [...cart, product] });
+        }
+      },
+      updateQuantity: ({ productId, qty }) => {
+        const cart = get().cart;
+        const newCart = cart.map((item) => (item.id === productId ? { ...item, qty } : item));
+        set({ cart: newCart });
+        console.log({ productId, qty, newCart });
+      },
       removeFromCart: (productId) =>
         set((state) => ({
           cart: state.cart.filter((item) => item.id !== productId),
@@ -61,6 +49,8 @@ export const cartTotalPrice = (state: CartStore) =>
   state.cart.reduce((total, item) => {
     const itemPrice = item.price || 0;
     const itemQty = item.qty || 1;
+
+    // console.log({ total, itemQty, itemPrice, cart: state.cart });
 
     return total + itemQty * itemPrice;
   }, 0);
